@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://telegra.ph/file/b69725257d6e3a1256dac.jpg" alt="VideoConvertor poster">
+  <img src="https://telegra.ph/file/b69725257d6e3a1256dac.jpg" alt="ACN Renamer">
 </p>
 <h1 align="center">
   <b>ᴠɪᴅᴇᴏ ᴄᴏɴᴠᴇʀᴛᴏʀ</b>
 </h1>
 
 
-<p align="left"><a href="https://github.com/masterdhanu"><img src="https://github-readme-stats.vercel.app/api/pin?username=masterdhanu-code&show_icons=true&theme=dracula&hide_border=true&repo=VideoConvertor"></a></p>
+<p align="left"><a href="https://github.com/vasusen-code/videoconvertor"><img src="https://github-readme-stats.vercel.app/api/pin?username=vasusen-code&show_icons=true&theme=dracula&hide_border=true&repo=VideoConvertor"></a></p>
   
 `Main branch` - For personal use
 <p align="left">
