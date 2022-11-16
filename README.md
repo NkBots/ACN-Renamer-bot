@@ -3,10 +3,7 @@
 </p>
 <h1 align="center">
   <b>Acn Renamer bot</b>
-</h1>
-
-
-<p align="left"><a href="https://github.com/masterdhanu/acn-renamer-bot"><img src="https://github-readme-stats.vercel.app/api/pin?username=masterdhanu-code&show_icons=true&theme=dracula&hide_border=true&repo=acn-renamer-bot"></a></p>
+</h1> 
   
 `Main branch` - For personal use
 <p align="left">
