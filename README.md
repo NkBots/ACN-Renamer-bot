@@ -2,11 +2,11 @@
   <img src="https://telegra.ph/file/b69725257d6e3a1256dac.jpg" alt="ACN Renamer">
 </p>
 <h1 align="center">
-  <b>ᴠɪᴅᴇᴏ ᴄᴏɴᴠᴇʀᴛᴏʀ</b>
+  <b>Acn Renamer bot</b>
 </h1>
 
 
-<p align="left"><a href="https://github.com/masterdhanu/acn-renamer-bot"><img src="https://github-readme-stats.vercel.app/api/pin?username=vasusen-code&show_icons=true&theme=dracula&hide_border=true&repo=VideoConvertor"></a></p>
+<p align="left"><a href="https://github.com/masterdhanu/acn-renamer-bot"><img src="https://github-readme-stats.vercel.app/api/pin?username=masterdhanu-code&show_icons=true&theme=dracula&hide_border=true&repo=acn-renamer-bot"></a></p>
   
 `Main branch` - For personal use
 <p align="left">
