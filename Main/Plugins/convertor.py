@@ -1,5 +1,5 @@
-#  This file is part of the VIDEOconvertor distribution.
-#  Copyright (c) 2021 vasusen-code ; All rights reserved. 
+#  This file is part of the acn-renamer-bot distribution.
+#  Copyright (c) 2021 masterdhanu ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ from LOCAL.localisation import SUPPORT_LINK, JPG, JPG2
 
 async def mp3(event, msg):
     Drone = event.client
-    edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
+    edit = await Anime Club Network.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
     else:
@@ -75,7 +75,7 @@ async def mp3(event, msg):
     os.remove(f'{out}.mp3')                           
                        
 async def flac(event, msg):
-    Drone = event.client
+    ANIME Club network = event.client
     edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
@@ -126,7 +126,7 @@ async def flac(event, msg):
     os.remove(f'{out}.flac')                 
 
 async def wav(event, msg):
-    Drone = event.client
+    AnimeClubNetwork = event.client
     edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
@@ -177,7 +177,7 @@ async def wav(event, msg):
     os.remove(f'{out}.wav')                 
                                        
 async def mp4(event, msg):
-    Drone = event.client
+    AnimeClubNetwork = event.client
     edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
@@ -222,7 +222,7 @@ async def mp4(event, msg):
     os.remove(f'{out}.mp4')                 
                                            
 async def mkv(event, msg):
-    Drone = event.client
+    ANIMECLUBNETWORK = event.client
     edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
@@ -267,7 +267,7 @@ async def mkv(event, msg):
     os.remove(f'{out}')
              
 async def webm(event, msg):
-    Drone = event.client
+    AnimeClubNetwork = event.client
     edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
@@ -312,7 +312,7 @@ async def webm(event, msg):
     os.remove(f'{out}')
              
 async def file(event, msg):
-    Drone = event.client
+    AnimeClubNetwork = event.client
     edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
@@ -347,7 +347,7 @@ async def file(event, msg):
     os.remove(name)                           
     
 async def video(event, msg):
-    Drone = event.client
+    AnimeClubNetwork = event.client
     edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
