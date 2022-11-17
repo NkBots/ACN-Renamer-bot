@@ -1,7 +1,7 @@
 
 
-#  This file is part of the VIDEOconvertor distribution.
-#  Copyright (c) 2021 vasusen-code ; All rights reserved. 
+#  This file is part of the acn-renamer-bot distribution.
+#  Copyright (c) 2021 masterdhanu ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -12,7 +12,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/MasterDHANU/acn-renamer-bot/blob/public/LICENSE> .
 
 from telethon import events, Button
 from ethon.teleutils import mention
@@ -24,7 +24,7 @@ from main.plugins.actions import set_thumbnail, rem_thumbnail, heroku_restart
 from LOCAL.localisation import START_TEXT as st
 from LOCAL.localisation import info_text, spam_notice, help_text, DEV, source_text, SUPPORT_LINK
 
-@Drone.on(events.NewMessage(incoming=True, pattern="/start"))
+@animeclubnetwork.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
     await event.reply(f'{st}', 
                       buttons=[
@@ -33,21 +33,21 @@ async def start(event):
     tag = f'[{event.sender.first_name}](tg://user?id={event.sender_id})'
     await Drone.send_message(int(ACCESS_CHANNEL), f'{tag} started the BOT')
     
-@Drone.on(events.callbackquery.CallbackQuery(data="menu"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="menu"))
 async def menu(event):
     await vc_menu(event)
     
-@Drone.on(events.callbackquery.CallbackQuery(data="info"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="info"))
 async def info(event):
     await event.edit(f'**ℹ️NFO:**\n\n{𝙿𝚘𝚠𝚎𝚛e𝚍 𝙱𝚢 @AnimeClubNetwork}
                     buttons=[[
                          Button.inline("Menu.", data="menu")]])
     
-@Drone.on(events.callbackquery.CallbackQuery(data="notice"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="notice"))
 async def notice(event):
     await event.answer(f'{spam_notice}', alert=True)
     
-@Drone.on(events.callbackquery.CallbackQuery(data="source"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="source"))
 async def source(event):
     await event.edit(source_text,
                     buttons=[[
@@ -55,7 +55,7 @@ async def source(event):
                          Button.url("FOR YOUR CHANNEL ", url="https://t.me/AnimeClubNetworkBotChats")]])
                          
                     
-@Drone.on(events.callbackquery.CallbackQuery(data="help"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="help"))
 async def help(event):
     await event.edit('**👥HELP & SETTINGS**',
                     buttons=[[
@@ -68,14 +68,14 @@ async def help(event):
                          [
                          Button.inline("BACK", data="menu")]])
     
-@Drone.on(events.callbackquery.CallbackQuery(data="plugins"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="plugins"))
 async def plugins(event):
     await event.edit(f'{help_text}',
                     buttons=[[Button.inline("Menu.", data="menu")]])
                    
  #-----------------------------------------------------------------------------------------------                            
     
-@Drone.on(events.callbackquery.CallbackQuery(data="sett"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="sett"))
 async def sett(event):    
     button = await event.get_message()
     msg = await button.get_reply_message() 
@@ -93,12 +93,12 @@ async def sett(event):
         await set_thumbnail(event, x.media)
         await xx.delete()
         
-@Drone.on(events.callbackquery.CallbackQuery(data="remt"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="remt"))
 async def remt(event):  
     await event.delete()
     await rem_thumbnail(event)
     
-@Drone.on(events.callbackquery.CallbackQuery(data="restart"))
+@animeclubnetwork.on(events.callbackquery.CallbackQuery(data="restart"))
 async def res(event):
     if not f'{event.sender_id}' == f'{int(AUTH_USERS)}':
         return await event.edit("Only authorized user can restart!")
