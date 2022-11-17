@@ -1,5 +1,5 @@
-#  This file is part of the VIDEOconvertor distribution.
-#  Copyright (c) 2021 vasusen-code ; All rights reserved. 
+#  This file is part of the acn-renamer-bot distribution.
+#  Copyright (c) 2021 masterdhanu ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -10,13 +10,13 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/masterdhanu/acn-renamer-bot/blob/public/LICENSE> .
 
 import datetime
 import motor.motor_asyncio
 from .. import MONGODB_URI
 
-SESSION_NAME = 'videoconvertor'
+SESSION_NAME = 'acnrenamerbot'
 
 class Database:
   
