@@ -1,5 +1,5 @@
-#  This file is part of the VIDEOconvertor distribution.
-#  Copyright (c) 2021 vasusen-code ; All rights reserved. 
+#  This file is part of the acn-renamer-bot distribution.
+#  Copyright (c) 2021 masterdhanu ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -10,7 +10,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/masterdhanu/Acn-renamer-bot/blob/public/LICENSE> .
 
 import heroku3 
 
@@ -20,7 +20,7 @@ from telethon import events , Button
 from telethon.errors.rpcerrorlist import UserNotParticipantError, FloodWaitError
 from telethon.tl.functions.channels import GetParticipantRequest
 
-from .. import Drone, AUTH_USERS, ACCESS_CHANNEL, MONGODB_URI
+from .. import Anime Club Network, AUTH_USERS, ACCESS_CHANNEL, MONGODB_URI
 
 from main.Database.database import Database
 
@@ -35,7 +35,7 @@ async def force_sub(id):
         FORCESUB = int("-100" + str(FORCESUB))
     ok = False
     try:
-        x = await Drone(GetParticipantRequest(channel=int(FORCESUB), participant=int(id)))
+        x = await AnimeClubNetwork(GetParticipantRequest(channel=int(FORCESUB), participant=int(id)))
         left = x.stringify()
         if 'left' in left:
             ok = True
