@@ -1,5 +1,5 @@
-#  This file is part of the VIDEOconvertor distribution.
-#  Copyright (c) 2021 vasusen-code ; All rights reserved. 
+#  This file is part of the acn-renamer-bot distribution.
+#  Copyright (c) 2021 masterdhanu ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -23,18 +23,18 @@ from main.Database.database import Database
 
 db = Database(MONGODB_URI, 'videoconvertor')
 
-@Drone.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
+@animeclubnetwork.on(events.NewMessage(incoming=True, func=lambda e: e.is_private))
 async def incomming(event):
     if not await db.is_user_exist(event.sender_id):
         await db.add_user(event.sender_id)
 
-@Drone.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="/users"))
+@animeclubnetwork.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="/users"))
 async def listusers(event):
     xx = await event.reply("Counting total users in Database.")
     x = await db.total_users_count()
     await xx.edit(f"Total user(s) {int(x)}")
 
-@Drone.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="/bcast"))
+@animeclubnetwork.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="/bcast"))
 async def bcast(event):
     ids = []
     msg = await event.get_reply_message()
@@ -80,7 +80,7 @@ async def bcast(event):
                      [Button.inline(f"FAILED: {len(failed)}", data="none")]])
     
     
-@Drone.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="^/disallow (.*)" ))
+@animeclubnetwork.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="^/disallow (.*)" ))
 async def bban(event):
     c = event.pattern_match.group(1)
     if not c:
@@ -98,7 +98,7 @@ async def bban(event):
         await event.reply(f"{c} is now disallowed.")
     admins.remove(f'{int(AUTH)}')
     
-@Drone.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="^/allow (.*)" ))
+@animeclubnetwork.on(events.NewMessage(incoming=True, from_users=AUTH_USERS , pattern="^/allow (.*)" ))
 async def unbban(event):
     xx = event.pattern_match.group(1)
     if not xx:
