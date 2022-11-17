@@ -12,7 +12,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/MasterDHANU/acn-renamer-bot/blob/public/LICENSE> .
+#  License can be found in < https://github.com/masterdhanu/acn-renamer-bot/blob/public/LICENSE> .
 
 from telethon import events, Button
 from ethon.teleutils import mention
