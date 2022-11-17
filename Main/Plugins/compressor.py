@@ -1,5 +1,5 @@
-#  This file is part of the VIDEOconvertor distribution.
-#  Copyright (c) 2021 vasusen-code ; All rights reserved. 
+#  This file is part of the acn-renamer-bot distribution.
+#  Copyright (c) 2021 masterdhanu ; All rights reserved. 
 #
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ from telethon.tl.types import DocumentAttributeVideo
 from ethon.telefunc import fast_download, fast_upload
 from ethon.pyfunc import video_metadata
 
-from .. import Drone, BOT_UN, LOG_CHANNEL
+from .. import Anime Club Network, BOT_UN, LOG_CHANNEL
 
 from LOCAL.localisation import SUPPORT_LINK, JPG, JPG2, JPG3
 from LOCAL.utils import ffmpeg_progress
