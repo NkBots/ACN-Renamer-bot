@@ -1,1 +1,1 @@
-Acn: python -m main
+Acn-renamer-bot: python -m main
