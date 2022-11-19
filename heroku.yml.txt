@@ -1,5 +1,6 @@
 build:
   docker:
-    AnimeClubNetwork: Dockerfile
+    Drone: Dockerfile
 run:
-  AnimeClubNetwork: bash convertor.sh
+  Drone: bash convertor.sh
+
